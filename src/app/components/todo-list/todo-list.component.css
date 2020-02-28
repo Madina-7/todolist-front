@@ -1,0 +1,60 @@
+p {
+    text-align: center;
+    color: black;
+}
+
+.todo-input {
+    width:80%;
+    font-size:15px;
+    padding:10px;
+    margin-bottom: 16px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.checkbox {
+    margin-right: 20px;
+}
+
+.add {
+    width:12%;
+}
+
+.todo-item {
+    margin-bottom:12px;
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+ }
+
+ .remove-item {
+     cursor: pointer;
+     margin-left: 14px;
+     &:hoover {
+        color: black;
+     }
+ }
+
+ .todo-item-left {
+     display: flex;
+     align-items: center;
+ }
+ 
+ button {
+     margin-left:20px;
+     background: white;
+     padding:5px;
+     padding-block-end: 5px;
+     padding-bottom: 5px;
+     border: 1px solid grey;
+     border-radius: 3px;
+ }
+
+ .crossed {
+     text-decoration: line-through;
+ }
+
+ .remove-button {
+     border: none;
+ }

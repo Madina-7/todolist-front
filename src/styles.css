@@ -1,0 +1,15 @@
+
+.container {
+    max-width: 600px;
+    margin:0 auto;
+    /*background-color:#f5f7fa;*/
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+    color:black;
+    background-color: #e6e9ed;
+    margin-top: 60px;
+    font-size: 24px;
+}
+ 

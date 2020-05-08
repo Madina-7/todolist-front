@@ -5,14 +5,19 @@
 
 <input type='text' [(ngModel)]="new_item" class='todo-input' placeholder="write here what you want to accomplish">
 <button class='add' (click)='addItem()'>Add</button>
-<div class='todo-item' *ngFor='let todo of todos; let i = index'>
+
+
+<div class='todo-item' *ngFor='let todo of todos;'>
+
     <div class='todo-item-left'>
         <input class='checkbox' type='checkbox' [(ngModel)]="todo.completed">
         <div [ngClass]="{'crossed': todo.completed}">{{ todo.title }}</div>
     </div>
     <div class='remove-item'>
-        <button class='remove-button' (click)='removeItem(i)'>&times;</button>
+        <button class='remove-button' (click)='removeItem(todo)'>&times;</button>
     </div>
+
 </div>
 
+{{test}}
 </body>

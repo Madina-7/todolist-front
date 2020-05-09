@@ -10,7 +10,7 @@
 <div class='todo-item' *ngFor='let todo of todos;'>
 
     <div class='todo-item-left'>
-        <input class='checkbox' type='checkbox' [(ngModel)]="todo.completed">
+        <input class='checkbox' [(ngModel)]="todo.completed" (ngModelChange)="updateItem(todo)"  type='checkbox'>
         <div [ngClass]="{'crossed': todo.completed}">{{ todo.title }}</div>
     </div>
     <div class='remove-item'>
@@ -19,5 +19,4 @@
 
 </div>
 
-{{test}}
 </body>
